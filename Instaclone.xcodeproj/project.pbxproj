@@ -56,6 +56,10 @@
 		3D8989812481574E00163E2B /* Instaclone */ = {
 			isa = PBXGroup;
 			children = (
+				3D8989992481580100163E2B /* Login */,
+				3D898998248157F400163E2B /* Registration */,
+				3D898997248157E400163E2B /* Main */,
+				3D898996248157C000163E2B /* UI_Additions */,
 				3D8989822481574E00163E2B /* AppDelegate.swift */,
 				3D8989842481574E00163E2B /* SceneDelegate.swift */,
 				3D8989862481574E00163E2B /* ContentView.swift */,
@@ -73,6 +77,226 @@
 				3D89898B2481575000163E2B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D898996248157C000163E2B /* UI_Additions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI_Additions;
+			sourceTree = "<group>";
+		};
+		3D898997248157E400163E2B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3D8989A22481598200163E2B /* Camera */,
+				3D8989A12481597200163E2B /* Messenger */,
+				3D89899A2481581600163E2B /* Home */,
+				3D89899B2481584D00163E2B /* Search */,
+				3D8989A02481590A00163E2B /* UserProfile */,
+				3D89899D2481588900163E2B /* PhotoSelection */,
+				3D89899E2481589400163E2B /* Activity */,
+				3D89899F248158E800163E2B /* Profile */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3D898998248157F400163E2B /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		3D8989992481580100163E2B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3D89899A2481581600163E2B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3D8989A824815B5500163E2B /* Views */,
+				3D8989A724815B4E00163E2B /* Screens */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3D89899B2481584D00163E2B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				3D8989AB24815B7100163E2B /* Views */,
+				3D8989A924815B5C00163E2B /* Screens */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		3D89899D2481588900163E2B /* PhotoSelection */ = {
+			isa = PBXGroup;
+			children = (
+				3D8989AE24815B8900163E2B /* Views */,
+				3D8989AD24815B8200163E2B /* Screens */,
+			);
+			path = PhotoSelection;
+			sourceTree = "<group>";
+		};
+		3D89899E2481589400163E2B /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				3D8989B024815B9900163E2B /* View */,
+				3D8989AF24815B9100163E2B /* Screens */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		3D89899F248158E800163E2B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3D8989B224815BA600163E2B /* Views */,
+				3D8989B124815B9F00163E2B /* Screens */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3D8989A02481590A00163E2B /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				3D8989AA24815B6700163E2B /* Views */,
+				3D8989AC24815B7900163E2B /* Screens */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		3D8989A12481597200163E2B /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				3D8989A624815B3900163E2B /* Views */,
+				3D8989A524815AB700163E2B /* Screens */,
+			);
+			path = Messenger;
+			sourceTree = "<group>";
+		};
+		3D8989A22481598200163E2B /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				3D8989A424815A7C00163E2B /* Views */,
+				3D8989A324815A6B00163E2B /* Sceens */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		3D8989A324815A6B00163E2B /* Sceens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sceens;
+			sourceTree = "<group>";
+		};
+		3D8989A424815A7C00163E2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D8989A524815AB700163E2B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3D8989A624815B3900163E2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D8989A724815B4E00163E2B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3D8989A824815B5500163E2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D8989A924815B5C00163E2B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3D8989AA24815B6700163E2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D8989AB24815B7100163E2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D8989AC24815B7900163E2B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3D8989AD24815B8200163E2B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3D8989AE24815B8900163E2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D8989AF24815B9100163E2B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3D8989B024815B9900163E2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D8989B124815B9F00163E2B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3D8989B224815BA600163E2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
