@@ -20,15 +20,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        // let contentView = ContentView()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView)
+            window.rootViewController = UIHostingController(rootView: ContentView().environmentObject(ScreenRouter()))
             self.window = window
             window.makeKeyAndVisible()
         }
+        
+        // MARK: - Füge TapGesture hinzu, wenn irgendwo auf dem Hintergrund (window) getapt wird.
+        let backgroundTapGesture = BackGroundGestureRecognizer(target: window, action:#selector(UIView.endEditing))
+        backgroundTapGesture.requiresExclusiveTouchType = false
+        backgroundTapGesture.cancelsTouchesInView = false
+        backgroundTapGesture.delegate = self
+        window?.addGestureRecognizer(backgroundTapGesture)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -62,3 +69,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+// MARK: Extension für einen Gesture-Recognizer als Delegate
+// Ohne die Extension erhält die delegate Property der BackgroundTapGesture keine Werte.
+extension SceneDelegate: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+}

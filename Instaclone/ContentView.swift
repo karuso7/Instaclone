@@ -9,8 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var screenRouter: ScreenRouter
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            if screenRouter.currentScreen == "loginScreen" {
+                LoginScreen()
+            } else if screenRouter.currentScreen == "registrationScreen" {
+                RegistrationScreen()
+                    .transition(.move(edge: .trailing))
+            } else if screenRouter.currentScreen == "homeScreen" {
+                HomeScreen()
+                    .transition(.scale)
+            }
+        }
     }
 }
 
@@ -19,3 +32,14 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+// MARK: - Extensions
+// zum Verschwinden der Tastertur
+#if canImport(UIKit)
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+#endif

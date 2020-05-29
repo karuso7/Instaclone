@@ -35,3 +35,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+// MARK: - Keyboard Extension
+// Funktionalität, die dafür sorgt, dass die Tastertur verschwindet, nachdem auf "Enter" getappt wurde.
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+
+

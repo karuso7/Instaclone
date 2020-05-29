@@ -13,6 +13,12 @@
 		3D8989892481575000163E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8989882481575000163E2B /* Assets.xcassets */; };
 		3D89898C2481575000163E2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D89898B2481575000163E2B /* Preview Assets.xcassets */; };
 		3D89898F2481575000163E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D89898D2481575000163E2B /* LaunchScreen.storyboard */; };
+		3D8989B82481609E00163E2B /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989B72481609E00163E2B /* LoginScreen.swift */; };
+		3D8989BA248160AF00163E2B /* RegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989B9248160AF00163E2B /* RegistrationScreen.swift */; };
+		3D8989BC248160D300163E2B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989BB248160D300163E2B /* HomeScreen.swift */; };
+		3D8989BE248162A900163E2B /* ScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989BD248162A900163E2B /* ScreenRouter.swift */; };
+		3D8989C124816AB300163E2B /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989C024816AB300163E2B /* KeyboardAdaptive.swift */; };
+		3D8989C424816F1B00163E2B /* BackgroundGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989C324816F1B00163E2B /* BackgroundGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		3D89898B2481575000163E2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D89898E2481575000163E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D8989902481575000163E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D8989B72481609E00163E2B /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		3D8989B9248160AF00163E2B /* RegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreen.swift; sourceTree = "<group>"; };
+		3D8989BB248160D300163E2B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		3D8989BD248162A900163E2B /* ScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRouter.swift; sourceTree = "<group>"; };
+		3D8989C024816AB300163E2B /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
+		3D8989C324816F1B00163E2B /* BackgroundGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,8 @@
 		3D898996248157C000163E2B /* UI_Additions */ = {
 			isa = PBXGroup;
 			children = (
+				3D8989C224816EB100163E2B /* Keyboard_Additions */,
+				3D8989BD248162A900163E2B /* ScreenRouter.swift */,
 			);
 			path = UI_Additions;
 			sourceTree = "<group>";
@@ -89,6 +103,7 @@
 		3D898997248157E400163E2B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3D8989C52481776300163E2B /* Post */,
 				3D8989A22481598200163E2B /* Camera */,
 				3D8989A12481597200163E2B /* Messenger */,
 				3D89899A2481581600163E2B /* Home */,
@@ -104,6 +119,8 @@
 		3D898998248157F400163E2B /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				3D8989B62481606C00163E2B /* Views */,
+				3D8989B52481606600163E2B /* Screens */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -111,6 +128,8 @@
 		3D8989992481580100163E2B /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				3D8989B42481605D00163E2B /* Views */,
+				3D8989B32481604F00163E2B /* Screens */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -218,6 +237,7 @@
 		3D8989A724815B4E00163E2B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				3D8989BB248160D300163E2B /* HomeScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -299,6 +319,68 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		3D8989B32481604F00163E2B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3D8989B72481609E00163E2B /* LoginScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3D8989B42481605D00163E2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D8989B52481606600163E2B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3D8989B9248160AF00163E2B /* RegistrationScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3D8989B62481606C00163E2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D8989C224816EB100163E2B /* Keyboard_Additions */ = {
+			isa = PBXGroup;
+			children = (
+				3D8989C024816AB300163E2B /* KeyboardAdaptive.swift */,
+				3D8989C324816F1B00163E2B /* BackgroundGestureRecognizer.swift */,
+			);
+			path = Keyboard_Additions;
+			sourceTree = "<group>";
+		};
+		3D8989C52481776300163E2B /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				3D8989C7248177CF00163E2B /* View */,
+				3D8989C6248177C700163E2B /* Screen */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		3D8989C6248177C700163E2B /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		3D8989C7248177CF00163E2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -370,7 +452,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8989C124816AB300163E2B /* KeyboardAdaptive.swift in Sources */,
 				3D8989832481574E00163E2B /* AppDelegate.swift in Sources */,
+				3D8989B82481609E00163E2B /* LoginScreen.swift in Sources */,
+				3D8989BE248162A900163E2B /* ScreenRouter.swift in Sources */,
+				3D8989BC248160D300163E2B /* HomeScreen.swift in Sources */,
+				3D8989BA248160AF00163E2B /* RegistrationScreen.swift in Sources */,
+				3D8989C424816F1B00163E2B /* BackgroundGestureRecognizer.swift in Sources */,
 				3D8989852481574E00163E2B /* SceneDelegate.swift in Sources */,
 				3D8989872481574E00163E2B /* ContentView.swift in Sources */,
 			);
