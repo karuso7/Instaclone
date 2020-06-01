@@ -23,7 +23,7 @@ struct HomeScreen: View {
             
                 TabView {
                     NavigationView {
-                        Text("Home Seite")
+                        PostListScreen()
                             
                         
                         .navigationBarItems(
@@ -33,7 +33,7 @@ struct HomeScreen: View {
                                     print("Kameraview muss sich hier öffnen")
                                     
                                 }
-                                Image(systemName: "camera")
+                                Image(systemName: "camera").imageScale(.large)
                             },
                             
                             trailing:
@@ -41,7 +41,7 @@ struct HomeScreen: View {
                                 Button("") {
                                     print("ChatView muss sich hier öffnen")
                                 }
-                                Image(systemName: "paperplane")
+                                Image(systemName: "paperplane").imageScale(.large)
                             }
                             )
                             .navigationBarTitle(
@@ -49,23 +49,23 @@ struct HomeScreen: View {
                         
                     }
                         .navigationViewStyle(StackNavigationViewStyle())
-                    .tabItem {Image(systemName: "house")}
+                    .tabItem {Image(systemName: "house").imageScale(.large)}
                     
                     NavigationView {
                         Text("Suchen Seite")
-                    }.tabItem{Image(systemName: "magnifyingglass")}
+                    }.tabItem{Image(systemName: "magnifyingglass").imageScale(.large)}
                     
                     NavigationView {
                         Text("Fotos hinzufügen")
-                    }.tabItem{Image(systemName: "plus.square")}
+                    }.tabItem{Image(systemName: "plus.square").imageScale(.large)}
                     
                     NavigationView {
                         Text("Likes-Liste")
-                    }.tabItem{Image(systemName: "heart")}
+                    }.tabItem{Image(systemName: "heart").imageScale(.large)}
                     
                     NavigationView {
                         Text("Profil-Seite")
-                    }.tabItem{Image(systemName: "person.circle")}
+                    }.tabItem{Image(systemName: "person.circle").imageScale(.large)}
                         
                     }
             
