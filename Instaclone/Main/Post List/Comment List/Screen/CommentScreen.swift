@@ -17,12 +17,16 @@ struct CommentScreen: View {
         VStack(alignment: .leading){
             HStack {
                 
-                HStack(alignment: .top) {
+                HStack {
                     SingleNavigationLink(destination: UserProfileScreen()) {
-                        UserProfileImage(image: Image("default_profile_m"))
+                        HStack(alignment: .top) {
+                            UserProfileImage(image: Image("default_profile_m"))
+                            Text("\(self.commentText)")
+                        }
+                        
                     }
                     
-                    Text("\(self.commentText)")
+                    
                 }
                 
                 
