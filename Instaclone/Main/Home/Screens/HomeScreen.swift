@@ -20,7 +20,6 @@ struct HomeScreen: View {
     
     var body: some View {
         VStack {
-            
                 TabView {
                     NavigationView {
                         PostListScreen()
@@ -64,10 +63,21 @@ struct HomeScreen: View {
                     }.tabItem{Image(systemName: "heart").imageScale(.large)}
                     
                     NavigationView {
-                        Text("Profil-Seite")
+                        ProfileScreen(profile: profileData[1])
+                        .navigationBarItems(
+                            trailing:
+                            HStack {
+                                Button("") {
+                                        print("settings soll sich hier öffnen")
+                                    }
+                                    Image(systemName: "ellipsis").imageScale(.large)
+                            }
+                        )
+                        .navigationBarTitle(
+                            Text(profileData[1].name), displayMode: .inline)
                     }.tabItem{Image(systemName: "person.circle").imageScale(.large)}
                         
-                    }
+                }
             
         }
         
