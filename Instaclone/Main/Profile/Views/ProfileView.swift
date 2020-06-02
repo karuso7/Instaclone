@@ -53,11 +53,11 @@ struct ProfileView: View {
                 HStack {
                     PictureCollectionView(images: profile.images)
                 }
-            }
+            }.padding(.top, 0)
             
             Spacer()
             
-        }.navigationBarTitle(Text(String(profile.id)), displayMode: .inline)
+        }
     }
 }
 
