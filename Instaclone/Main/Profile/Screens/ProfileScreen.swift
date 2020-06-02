@@ -14,6 +14,7 @@ struct ProfileScreen: View {
     var body: some View {
         List {
             ProfileView(profile: profile)
+            
         }.padding(.horizontal, -20)
     }
 }

@@ -75,6 +75,7 @@ struct HomeScreen: View {
                         )
                         .navigationBarTitle(
                             Text(profileData[1].id), displayMode: .inline)
+                        
                     }.tabItem{Image(systemName: "person.circle").imageScale(.large)}
                         
                 }
