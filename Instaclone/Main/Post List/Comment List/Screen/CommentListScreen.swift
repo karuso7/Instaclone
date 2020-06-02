@@ -15,6 +15,8 @@ import SwiftUI
 //           - Ein Sende-Button, der ein Kommentar abgibt und die Tastertur schließt
 
 struct CommentListScreen: View {
+    
+    @State var commentInput = ""
     // Initializer, um die Liste ohne Linien darzustellen
     init() {
         UITableView.appearance().tableFooterView = UIView()
@@ -22,11 +24,25 @@ struct CommentListScreen: View {
     }
     
     var body: some View {
-        List() {
-            CommentScreen()
-            CommentScreen()
-            CommentScreen()
+        VStack {
+            List() {
+                CommentScreen()
+                CommentScreen()
+                CommentScreen()
+            }
+          Spacer()
+            HStack {
+                TextField("Als User kommentieren...", text: self.$commentInput)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                Button(action: {print("Posten getappt")}) {
+                    Text("Posten")
+                }
+            }
+                
+          
         }
+        
+        
     }
 }
 
