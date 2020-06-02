@@ -8,6 +8,12 @@
 
 import SwiftUI
 
+
+// MARK: TODO - Kommentare schreiben
+// Es fehlt: - Ein Textfeld (Bottom)
+//           - Textfeld muss sich mit der Tastertur nach oben verschieben
+//           - Ein Sende-Button, der ein Kommentar abgibt und die Tastertur schließt
+
 struct CommentListScreen: View {
     // Initializer, um die Liste ohne Linien darzustellen
     init() {

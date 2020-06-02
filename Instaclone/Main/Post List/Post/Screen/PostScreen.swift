@@ -61,10 +61,9 @@ struct PostScreen: View {
                     .padding(.trailing)
                     
                 
-
-                Button(action: {print("Comment tapped")}) {
+                SingleNavigationLink(destination: CommentListScreen() ) {
                     Image(systemName: "message").foregroundColor(.primary).imageScale(.large)
-                }.buttonStyle(PlainButtonStyle())
+                }
                 
                 Spacer()
                 Text("Gefällt \(likes) Mal")
