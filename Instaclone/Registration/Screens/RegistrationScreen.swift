@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import KeyboardObserving
 
 struct RegistrationScreen: View {
 
@@ -98,7 +99,7 @@ struct RegistrationScreen: View {
                         
                     }.padding(.horizontal)
                     Spacer()
-                }.keyBoardAdaptive()
+                }.keyboardObserving()
                 
                 VStack {
                     

@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import KeyboardObserving
 
 
 // MARK: TODO - Kommentare schreiben
@@ -31,6 +32,7 @@ struct CommentListScreen: View {
                 CommentScreen()
             }
           Spacer()
+            
             HStack {
                 TextField("Als User kommentieren...", text: self.$commentInput)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -40,7 +42,7 @@ struct CommentListScreen: View {
             }
                 
           
-        }
+        }.keyboardObserving()
         
         
     }
