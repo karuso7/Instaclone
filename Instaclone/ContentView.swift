@@ -18,7 +18,7 @@ struct ContentView: View {
                 LoginScreen()
             } else if screenRouter.currentScreen == "registrationScreen" {
                 RegistrationScreen()
-                    .transition(.move(edge: .trailing))
+                    .transition(.scale)
             } else if screenRouter.currentScreen == "homeScreen" {
                 HomeScreen()
                     .transition(.scale)

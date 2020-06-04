@@ -28,7 +28,7 @@ struct PostScreen: View {
                 SingleNavigationLink(destination: UserProfileScreen() ) {
                     HStack {
                         UserProfileImage(image: Image("default_profile_m"))
-                        Text("UserXY").bold()
+                        Text("\(self.username)").bold()
                     }
                     
                 }
