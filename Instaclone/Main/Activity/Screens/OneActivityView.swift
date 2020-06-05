@@ -39,7 +39,7 @@ struct OneActivityView: View {
             VStack {
                 Text(message)
             }
-        }.padding()
+        }.padding(.horizontal).padding(.vertical, 10)
     }
     
 }

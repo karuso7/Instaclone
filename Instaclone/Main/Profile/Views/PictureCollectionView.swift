@@ -5,7 +5,8 @@ struct PictureCollectionView: View {
     
     var body: some View {
         VStack {
-            Text("Hier kommen die Bilder hin")
+            //Hier kommen die Bilder hin (Collection)
+            Text("")
         }
     }
 }

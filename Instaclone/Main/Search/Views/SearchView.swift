@@ -14,7 +14,7 @@ struct SearchView: View {
     var body: some View {
         VStack {
             HStack {
-                TextField("Suche", text: self.$search) {
+                TextField("Suchen", text: self.$search) {
                     UIApplication.shared.endEditing()
                 }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
