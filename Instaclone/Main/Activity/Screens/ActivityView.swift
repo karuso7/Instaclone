@@ -15,7 +15,7 @@ struct ActivityView: View {
             List {
                 OneActivityView(name: "Max Mustermann", action: 2, beitrag: 6)
                 OneActivityView(name: "Sebastian Pöhlmann", action: 1, beitrag: 0)
-                OneActivityView(name: "Bern Bauer", action: 1, beitrag: 0)
+                OneActivityView(name: "Bernd Bauer", action: 1, beitrag: 0)
                 OneActivityView(name: "Susan Haltam", action: 3, beitrag: 7)
                 OneActivityView(name: "Luc Reinke", action: 2, beitrag: 3)
                 OneActivityView(name: "Luc Reinke", action: 3, beitrag: 6)

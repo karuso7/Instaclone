@@ -22,10 +22,7 @@ struct SearchView: View {
             }.padding(.top)
             
             HStack {
-                List {
-                    //Ergebnisse sollen sich wärend der Sucheingabe aktualisieren
-                    Text("")
-                }.padding(.horizontal, -20)
+                SearchResultView(string: search)
             }
             
             Spacer()

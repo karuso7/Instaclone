@@ -26,6 +26,8 @@
 		3DCFEE562485529500F25BF3 /* SingleNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFEE552485529500F25BF3 /* SingleNavigationLink.swift */; };
 		3DCFEE5B2485A13000F25BF3 /* CommentListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFEE5A2485A13000F25BF3 /* CommentListScreen.swift */; };
 		3DCFEE5D2485A36600F25BF3 /* CommentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFEE5C2485A36600F25BF3 /* CommentScreen.swift */; };
+		D44113D5248AA1640009FE06 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44113D4248AA1640009FE06 /* TestView.swift */; };
+		D44113D7248AA26D0009FE06 /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44113D6248AA26D0009FE06 /* SearchResultView.swift */; };
 		D4D04F7F2486957F00ECE6AA /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D04F7E2486957F00ECE6AA /* ProfileScreen.swift */; };
 		D4D04F81248695F800ECE6AA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D04F80248695F800ECE6AA /* ProfileView.swift */; };
 		D4D04FA42486B08600ECE6AA /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = D4D04FA32486B08600ECE6AA /* ASCollectionView */; };
@@ -89,6 +91,8 @@
 		3DCFEE552485529500F25BF3 /* SingleNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNavigationLink.swift; sourceTree = "<group>"; };
 		3DCFEE5A2485A13000F25BF3 /* CommentListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListScreen.swift; sourceTree = "<group>"; };
 		3DCFEE5C2485A36600F25BF3 /* CommentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentScreen.swift; sourceTree = "<group>"; };
+		D44113D4248AA1640009FE06 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		D44113D6248AA26D0009FE06 /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
 		D4D04F7E2486957F00ECE6AA /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		D4D04F80248695F800ECE6AA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D4D04FA52486B3B200ECE6AA /* PictureCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionView.swift; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 				3D8989C224816EB100163E2B /* Keyboard_Additions */,
 				3D8989BD248162A900163E2B /* ScreenRouter.swift */,
 				D4EFDE4424868E650068C946 /* CircleImage.swift */,
+				D44113D4248AA1640009FE06 /* TestView.swift */,
 			);
 			path = UI_Additions;
 			sourceTree = "<group>";
@@ -352,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				D4E65863248A4E290058E2E4 /* SearchView.swift */,
+				D44113D6248AA26D0009FE06 /* SearchResultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -658,6 +664,7 @@
 				3D8989C124816AB300163E2B /* KeyboardAdaptive.swift in Sources */,
 				D4EFDE4B24868E7C0068C946 /* Profile.swift in Sources */,
 				3DCFEE5D2485A36600F25BF3 /* CommentScreen.swift in Sources */,
+				D44113D5248AA1640009FE06 /* TestView.swift in Sources */,
 				3DCFEE4A24850CFC00F25BF3 /* PostListScreen.swift in Sources */,
 				3D8989832481574E00163E2B /* AppDelegate.swift in Sources */,
 				D4D04F7F2486957F00ECE6AA /* ProfileScreen.swift in Sources */,
@@ -676,6 +683,7 @@
 				3DCFEE4F24850FC500F25BF3 /* PostScreen.swift in Sources */,
 				3D8989C424816F1B00163E2B /* BackgroundGestureRecognizer.swift in Sources */,
 				3D8989852481574E00163E2B /* SceneDelegate.swift in Sources */,
+				D44113D7248AA26D0009FE06 /* SearchResultView.swift in Sources */,
 				3D8989872481574E00163E2B /* ContentView.swift in Sources */,
 				D4E6586A248A60D20058E2E4 /* OneActivityView.swift in Sources */,
 				D4EFDE4A24868E7C0068C946 /* Data.swift in Sources */,
