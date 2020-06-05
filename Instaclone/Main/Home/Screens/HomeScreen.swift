@@ -51,7 +51,10 @@ struct HomeScreen: View {
                     .tabItem {Image(systemName: "house").imageScale(.large)}
                     
                     NavigationView {
-                        Text("Suchen Seite")
+                        SearchScreen()
+                        .navigationBarTitle(
+                        Text("Suche"), displayMode: .inline)
+                        //NavigationBar soll für diese View ausgeschaltet werden und der abstand nach oben muss dann minimiert werden
                     }.tabItem{Image(systemName: "magnifyingglass").imageScale(.large)}
                     
                     NavigationView {
@@ -59,11 +62,13 @@ struct HomeScreen: View {
                     }.tabItem{Image(systemName: "plus.square").imageScale(.large)}
                     
                     NavigationView {
-                        Text("Likes-Liste")
+                        ActivityScreen()
+                        .navigationBarTitle(
+                        Text("Aktivität"), displayMode: .inline)
                     }.tabItem{Image(systemName: "heart").imageScale(.large)}
                     
                     NavigationView {
-                        ProfileScreen(profile: profileData[1])
+                        ProfileScreen(profile: profileData[0])
                         .navigationBarItems(
                             trailing:
                             HStack {
@@ -74,7 +79,7 @@ struct HomeScreen: View {
                             }
                         )
                         .navigationBarTitle(
-                            Text(profileData[1].id), displayMode: .inline)
+                            Text(profileData[0].id), displayMode: .inline)
                         
                     }.tabItem{Image(systemName: "person.circle").imageScale(.large)}
                         

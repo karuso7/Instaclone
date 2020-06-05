@@ -18,7 +18,7 @@ struct CommentScreen: View {
             HStack {
                 
                 HStack {
-                    SingleNavigationLink(destination: UserProfileScreen()) {
+                    SingleNavigationLink(destination: UserProfileScreen(profile: profileData[1])) {
                         HStack(alignment: .top) {
                             UserProfileImage(image: Image("default_profile_m"))
                             Text("\(self.commentText)")

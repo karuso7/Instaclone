@@ -30,6 +30,12 @@
 		D4D04F81248695F800ECE6AA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D04F80248695F800ECE6AA /* ProfileView.swift */; };
 		D4D04FA42486B08600ECE6AA /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = D4D04FA32486B08600ECE6AA /* ASCollectionView */; };
 		D4D04FA62486B3B200ECE6AA /* PictureCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D04FA52486B3B200ECE6AA /* PictureCollectionView.swift */; };
+		D4E65860248707700058E2E4 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E6585F248707700058E2E4 /* UserProfileView.swift */; };
+		D4E65862248A4DC10058E2E4 /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E65861248A4DC10058E2E4 /* SearchScreen.swift */; };
+		D4E65864248A4E290058E2E4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E65863248A4E290058E2E4 /* SearchView.swift */; };
+		D4E65866248A5D1E0058E2E4 /* ActivityScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E65865248A5D1E0058E2E4 /* ActivityScreen.swift */; };
+		D4E65868248A5D310058E2E4 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E65867248A5D310058E2E4 /* ActivityView.swift */; };
+		D4E6586A248A60D20058E2E4 /* OneActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E65869248A60D20058E2E4 /* OneActivityView.swift */; };
 		D4EFDE3524868E470068C946 /* turtlerock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4EFDE2824868E470068C946 /* turtlerock.jpg */; };
 		D4EFDE3624868E470068C946 /* silversalmoncreek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4EFDE2924868E470068C946 /* silversalmoncreek.jpg */; };
 		D4EFDE3724868E470068C946 /* icybay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4EFDE2A24868E470068C946 /* icybay.jpg */; };
@@ -86,6 +92,12 @@
 		D4D04F7E2486957F00ECE6AA /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		D4D04F80248695F800ECE6AA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D4D04FA52486B3B200ECE6AA /* PictureCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionView.swift; sourceTree = "<group>"; };
+		D4E6585F248707700058E2E4 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileView.swift; path = Instaclone/Main/Profile/Views/UserProfileView.swift; sourceTree = SOURCE_ROOT; };
+		D4E65861248A4DC10058E2E4 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
+		D4E65863248A4E290058E2E4 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		D4E65865248A5D1E0058E2E4 /* ActivityScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityScreen.swift; sourceTree = "<group>"; };
+		D4E65867248A5D310058E2E4 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityView.swift; path = Instaclone/Main/Activity/Screens/ActivityView.swift; sourceTree = SOURCE_ROOT; };
+		D4E65869248A60D20058E2E4 /* OneActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OneActivityView.swift; path = Instaclone/Main/Activity/Screens/OneActivityView.swift; sourceTree = SOURCE_ROOT; };
 		D4EFDE2824868E470068C946 /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock.jpg; sourceTree = "<group>"; };
 		D4EFDE2924868E470068C946 /* silversalmoncreek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silversalmoncreek.jpg; sourceTree = "<group>"; };
 		D4EFDE2A24868E470068C946 /* icybay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icybay.jpg; sourceTree = "<group>"; };
@@ -323,6 +335,7 @@
 		3D8989A924815B5C00163E2B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D4E65861248A4DC10058E2E4 /* SearchScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -330,6 +343,7 @@
 		3D8989AA24815B6700163E2B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D4E6585F248707700058E2E4 /* UserProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -337,6 +351,7 @@
 		3D8989AB24815B7100163E2B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D4E65863248A4E290058E2E4 /* SearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -366,6 +381,7 @@
 		3D8989AF24815B9100163E2B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D4E65865248A5D1E0058E2E4 /* ActivityScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -373,6 +389,8 @@
 		3D8989B024815B9900163E2B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D4E65867248A5D310058E2E4 /* ActivityView.swift */,
+				D4E65869248A60D20058E2E4 /* OneActivityView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -648,16 +666,22 @@
 				3DCFEE512485255B00F25BF3 /* UserProfileImage.swift in Sources */,
 				D4D04FA62486B3B200ECE6AA /* PictureCollectionView.swift in Sources */,
 				3D8989BE248162A900163E2B /* ScreenRouter.swift in Sources */,
+				D4E65862248A4DC10058E2E4 /* SearchScreen.swift in Sources */,
 				3D8989BC248160D300163E2B /* HomeScreen.swift in Sources */,
 				3D8989BA248160AF00163E2B /* RegistrationScreen.swift in Sources */,
+				D4E65868248A5D310058E2E4 /* ActivityView.swift in Sources */,
 				3DCFEE532485456600F25BF3 /* UserProfileScreen.swift in Sources */,
+				D4E65864248A4E290058E2E4 /* SearchView.swift in Sources */,
+				D4E65860248707700058E2E4 /* UserProfileView.swift in Sources */,
 				3DCFEE4F24850FC500F25BF3 /* PostScreen.swift in Sources */,
 				3D8989C424816F1B00163E2B /* BackgroundGestureRecognizer.swift in Sources */,
 				3D8989852481574E00163E2B /* SceneDelegate.swift in Sources */,
 				3D8989872481574E00163E2B /* ContentView.swift in Sources */,
+				D4E6586A248A60D20058E2E4 /* OneActivityView.swift in Sources */,
 				D4EFDE4A24868E7C0068C946 /* Data.swift in Sources */,
 				3DCFEE562485529500F25BF3 /* SingleNavigationLink.swift in Sources */,
 				D4D04F81248695F800ECE6AA /* ProfileView.swift in Sources */,
+				D4E65866248A5D1E0058E2E4 /* ActivityScreen.swift in Sources */,
 				3DCFEE5B2485A13000F25BF3 /* CommentListScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

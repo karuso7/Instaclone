@@ -9,13 +9,18 @@
 import SwiftUI
 
 struct UserProfileScreen: View {
+    var profile: Profile
+    
     var body: some View {
-        Text("Ein Nutzerprofil")
+        List {
+            UserProfileView(profile: profile)
+            
+        }.padding(.horizontal, -20)
     }
 }
 
 struct UserProfileScreen_Previews: PreviewProvider {
     static var previews: some View {
-        UserProfileScreen()
+        UserProfileScreen(profile: profileData[1])
     }
 }
