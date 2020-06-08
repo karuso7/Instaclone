@@ -66,7 +66,7 @@ struct UserProfileView: View {
             
             VStack {
                 HStack {
-                    PictureCollectionView(images: profile.images)
+                    PictureCollectionView(profile: profile, dataExample: (0 ..< profile.images.count).map { $0 })
                 }
             }.padding(.top, 0)
             

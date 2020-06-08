@@ -12,10 +12,7 @@ struct UserProfileScreen: View {
     var profile: Profile
     
     var body: some View {
-        List {
-            UserProfileView(profile: profile)
-            
-        }.padding(.horizontal, -20)
+        UserProfileView(profile: profile)
     }
 }
 

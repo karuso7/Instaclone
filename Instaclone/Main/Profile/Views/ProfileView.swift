@@ -51,7 +51,8 @@ struct ProfileView: View {
             
             VStack {
                 HStack {
-                    PictureCollectionView(images: profile.images)
+                    //dataExample ist in dem Fall nur ein Array mit Integern (Anzahl der Fotos des jeweiligen Profils). Eine sauberere Lösung widrd noch gesucht.
+                    PictureCollectionView(profile: profile, dataExample: (0 ..< profile.images.count).map { $0 })
                 }
             }.padding(.top, 0)
             
