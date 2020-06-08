@@ -10,6 +10,8 @@ import SwiftUI
 
 struct HomeScreen: View {
     
+    @EnvironmentObject var screenRouter: ScreenRouter
+    
     // MARK: - Custom Initializer
     // MARK: Navigation Bars lassen sich allein durch SwiftUI nicht stylen.
     // SwiftUI nutzt für einen NavigationView eine UINavigationBar (schön zu sehen in der Debut View Hierarchy).
@@ -22,6 +24,8 @@ struct HomeScreen: View {
         VStack {
             
                 TabView {
+                    
+                    // MARK: - NavigationBar & Homefeed
                     NavigationView {
                         PostListScreen()
                             
@@ -29,19 +33,22 @@ struct HomeScreen: View {
                         .navigationBarItems(
                             leading:
                             HStack {
-                                Button("") {
-                                    print("Kameraview muss sich hier öffnen")
+                                Button(action: {
+                                    self.screenRouter.currentScreen = "loginScreen"
                                     
+                                }) {
+                                    Image(systemName: "arrow.uturn.left.circle").imageScale(.large).foregroundColor(.primary).frame(width: 25, height: 25, alignment: .center)
                                 }
-                                Image(systemName: "camera").imageScale(.large)
+                                
                             },
                             
                             trailing:
                             HStack {
-                                Button("") {
-                                    print("ChatView muss sich hier öffnen")
+                                Button(action: {
+                                    print("Messenger öffnen")
+                                }) {
+                                    Image(systemName: "paperplane").imageScale(.large).foregroundColor(.primary).frame(width: 25, height: 25, alignment: .center)
                                 }
-                                Image(systemName: "paperplane").imageScale(.large)
                             }
                             )
                             .navigationBarTitle(
@@ -51,18 +58,28 @@ struct HomeScreen: View {
                         .navigationViewStyle(StackNavigationViewStyle())
                     .tabItem {Image(systemName: "house").imageScale(.large)}
                     
+                    // MARK: - SearchScreen
                     NavigationView {
                         Text("Suchen Seite")
                     }.tabItem{Image(systemName: "magnifyingglass").imageScale(.large)}
                     
+                    // MARK: - PostCreationScreen
                     NavigationView {
-                        Text("Fotos hinzufügen")
+                        PostCreationScreen()
+                        .navigationBarItems(leading:
+                            HStack {
+                                Text("Neuer Beitrag").bold()
+                            }
+                        )
+                            
                     }.tabItem{Image(systemName: "plus.square").imageScale(.large)}
                     
+                    // MARK: - ActivityScreen
                     NavigationView {
                         Text("Likes-Liste")
                     }.tabItem{Image(systemName: "heart").imageScale(.large)}
                     
+                    // MARK: - ProfileScreen
                     NavigationView {
                         Text("Profil-Seite")
                     }.tabItem{Image(systemName: "person.circle").imageScale(.large)}
@@ -76,6 +93,6 @@ struct HomeScreen: View {
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen()
+        HomeScreen().environmentObject(ScreenRouter())
     }
 }
