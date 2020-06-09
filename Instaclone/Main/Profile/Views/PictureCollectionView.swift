@@ -16,8 +16,8 @@ struct PictureCollectionView: View {
             }
         .layout {
             .grid(layoutMode: .adaptive(withMinItemSize: self.bounds.size.width/3),
-                  itemSpacing: 0,
-                  lineSpacing: 0,
+                  itemSpacing: 5,
+                  lineSpacing: 1,
                   itemSize: .absolute(self.bounds.size.width/3))
         }.padding(-20).padding(.vertical, 20)
     }
