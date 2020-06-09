@@ -22,6 +22,9 @@ struct ContentView: View {
             } else if screenRouter.currentScreen == "homeScreen" {
                 HomeScreen()
                     .transition(.scale)
+            } else if screenRouter.currentScreen == "messengerScreen" {
+                ConversationListScreen()
+                    .transition(.scale)
             }
         }
     }

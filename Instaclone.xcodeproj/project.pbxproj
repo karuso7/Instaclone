@@ -11,6 +11,11 @@
 		3D227807248B8DB400CAD697 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D227806248B8DB400CAD697 /* ImagePicker.swift */; };
 		3D227809248B922000CAD697 /* ImagePickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D227808248B922000CAD697 /* ImagePickerCoordinator.swift */; };
 		3D57AA82248E36FA00B39FC4 /* AddImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D57AA81248E36FA00B39FC4 /* AddImageView.swift */; };
+		3D57AA8F248F837400B39FC4 /* SwiftUIRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 3D57AA8E248F837400B39FC4 /* SwiftUIRefresh */; };
+		3D57AA91248F8AB400B39FC4 /* ConversationListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D57AA90248F8AB400B39FC4 /* ConversationListScreen.swift */; };
+		3D57AA93248F8B5600B39FC4 /* ConversationEntryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D57AA92248F8B5600B39FC4 /* ConversationEntryScreen.swift */; };
+		3D57AA95248F94E900B39FC4 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D57AA94248F94E900B39FC4 /* ChatScreen.swift */; };
+		3D57AA97248F9C6B00B39FC4 /* MessageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D57AA96248F9C6B00B39FC4 /* MessageTextView.swift */; };
 		3D8989832481574E00163E2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989822481574E00163E2B /* AppDelegate.swift */; };
 		3D8989852481574E00163E2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989842481574E00163E2B /* SceneDelegate.swift */; };
 		3D8989872481574E00163E2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989862481574E00163E2B /* ContentView.swift */; };
@@ -38,6 +43,10 @@
 		3D227806248B8DB400CAD697 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		3D227808248B922000CAD697 /* ImagePickerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerCoordinator.swift; sourceTree = "<group>"; };
 		3D57AA81248E36FA00B39FC4 /* AddImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageView.swift; sourceTree = "<group>"; };
+		3D57AA90248F8AB400B39FC4 /* ConversationListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListScreen.swift; sourceTree = "<group>"; };
+		3D57AA92248F8B5600B39FC4 /* ConversationEntryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationEntryScreen.swift; sourceTree = "<group>"; };
+		3D57AA94248F94E900B39FC4 /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		3D57AA96248F9C6B00B39FC4 /* MessageTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTextView.swift; sourceTree = "<group>"; };
 		3D89897F2481574E00163E2B /* Instaclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instaclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8989822481574E00163E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D8989842481574E00163E2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D57AA8F248F837400B39FC4 /* SwiftUIRefresh in Frameworks */,
 				3DC15AA82487B94C001E010E /* KeyboardObserving in Frameworks */,
 				3DC15AAB2487B9C2001E010E /* SwiftUIX in Frameworks */,
 			);
@@ -258,6 +268,9 @@
 		3D8989A524815AB700163E2B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				3D57AA94248F94E900B39FC4 /* ChatScreen.swift */,
+				3D57AA92248F8B5600B39FC4 /* ConversationEntryScreen.swift */,
+				3D57AA90248F8AB400B39FC4 /* ConversationListScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -265,6 +278,7 @@
 		3D8989A624815B3900163E2B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3D57AA96248F9C6B00B39FC4 /* MessageTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -498,6 +512,7 @@
 			packageProductDependencies = (
 				3DC15AA72487B94C001E010E /* KeyboardObserving */,
 				3DC15AAA2487B9C2001E010E /* SwiftUIX */,
+				3D57AA8E248F837400B39FC4 /* SwiftUIRefresh */,
 			);
 			productName = Instaclone;
 			productReference = 3D89897F2481574E00163E2B /* Instaclone.app */;
@@ -530,6 +545,7 @@
 			packageReferences = (
 				3DC15AA62487B94C001E010E /* XCRemoteSwiftPackageReference "KeyboardObserving" */,
 				3DC15AA92487B9C2001E010E /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+				3D57AA8D248F837400B39FC4 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */,
 			);
 			productRefGroup = 3D8989802481574E00163E2B /* Products */;
 			projectDirPath = "";
@@ -562,12 +578,15 @@
 				3DCFEE4A24850CFC00F25BF3 /* PostListScreen.swift in Sources */,
 				3D227809248B922000CAD697 /* ImagePickerCoordinator.swift in Sources */,
 				3D8989832481574E00163E2B /* AppDelegate.swift in Sources */,
+				3D57AA97248F9C6B00B39FC4 /* MessageTextView.swift in Sources */,
 				3D227807248B8DB400CAD697 /* ImagePicker.swift in Sources */,
 				3D8989B82481609E00163E2B /* LoginScreen.swift in Sources */,
 				3DCFEE512485255B00F25BF3 /* UserProfileImage.swift in Sources */,
 				3D8989BE248162A900163E2B /* ScreenRouter.swift in Sources */,
+				3D57AA93248F8B5600B39FC4 /* ConversationEntryScreen.swift in Sources */,
 				3D8989BC248160D300163E2B /* HomeScreen.swift in Sources */,
 				3D8989BA248160AF00163E2B /* RegistrationScreen.swift in Sources */,
+				3D57AA91248F8AB400B39FC4 /* ConversationListScreen.swift in Sources */,
 				3DCFEE532485456600F25BF3 /* UserProfileScreen.swift in Sources */,
 				3D57AA82248E36FA00B39FC4 /* AddImageView.swift in Sources */,
 				3DCFEE4F24850FC500F25BF3 /* PostScreen.swift in Sources */,
@@ -575,6 +594,7 @@
 				3D8989852481574E00163E2B /* SceneDelegate.swift in Sources */,
 				3D8989872481574E00163E2B /* ContentView.swift in Sources */,
 				3DCFEE562485529500F25BF3 /* SingleNavigationLink.swift in Sources */,
+				3D57AA95248F94E900B39FC4 /* ChatScreen.swift in Sources */,
 				3D227804248B72D700CAD697 /* PostCreationScreen.swift in Sources */,
 				3DCFEE5B2485A13000F25BF3 /* CommentListScreen.swift in Sources */,
 			);
@@ -772,6 +792,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3D57AA8D248F837400B39FC4 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/timbersoftware/SwiftUIRefresh.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
 		3DC15AA62487B94C001E010E /* XCRemoteSwiftPackageReference "KeyboardObserving" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/nickffox/KeyboardObserving";
@@ -791,6 +819,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3D57AA8E248F837400B39FC4 /* SwiftUIRefresh */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D57AA8D248F837400B39FC4 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */;
+			productName = SwiftUIRefresh;
+		};
 		3DC15AA72487B94C001E010E /* KeyboardObserving */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3DC15AA62487B94C001E010E /* XCRemoteSwiftPackageReference "KeyboardObserving" */;

@@ -7,10 +7,12 @@
 //
 
 import SwiftUI
+import SwiftUIRefresh
 
 struct HomeScreen: View {
     
     @EnvironmentObject var screenRouter: ScreenRouter
+    @State var refreshIsShowing = false
     
     // MARK: - Custom Initializer
     // MARK: Navigation Bars lassen sich allein durch SwiftUI nicht stylen.
@@ -23,12 +25,12 @@ struct HomeScreen: View {
     var body: some View {
         VStack {
             
-                TabView {
-                    
-                    // MARK: - NavigationBar & Homefeed
-                    NavigationView {
-                        PostListScreen()
-                            
+            TabView {
+                
+                // MARK: - NavigationBar & Homefeed
+                NavigationView {
+                    PostListScreen()
+                        
                         
                         .navigationBarItems(
                             leading:
@@ -38,53 +40,61 @@ struct HomeScreen: View {
                                     
                                 }) {
                                     Image(systemName: "arrow.uturn.left.circle").imageScale(.large).foregroundColor(.primary).frame(width: 25, height: 25, alignment: .center)
-                                }
-                                
+                                }            
                             },
                             
                             trailing:
                             HStack {
                                 Button(action: {
                                     print("Messenger öffnen")
+                                    self.screenRouter.currentScreen = "messengerScreen"
                                 }) {
                                     Image(systemName: "paperplane").imageScale(.large).foregroundColor(.primary).frame(width: 25, height: 25, alignment: .center)
                                 }
                             }
-                            )
-                            .navigationBarTitle(
-                                Text("Instaclone"), displayMode: .inline)
-                        
+                    )
+                        .navigationBarTitle(
+                            Text("Instaclone"), displayMode: .inline)
+                    
+                }
+                .navigationViewStyle(StackNavigationViewStyle())
+                .tabItem {Image(systemName: "house").imageScale(.large)}
+                .pullToRefresh(isShowing: $refreshIsShowing) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        // MARK: TODO: Firebase-Daten neu laden!
+                        print("Lade Daten aus Firebase Datenbank")
+                        self.refreshIsShowing = false
                     }
-                        .navigationViewStyle(StackNavigationViewStyle())
-                    .tabItem {Image(systemName: "house").imageScale(.large)}
-                    
-                    // MARK: - SearchScreen
-                    NavigationView {
-                        Text("Suchen Seite")
-                    }.tabItem{Image(systemName: "magnifyingglass").imageScale(.large)}
-                    
-                    // MARK: - PostCreationScreen
-                    NavigationView {
-                        PostCreationScreen()
+                }
+                
+                
+                // MARK: - SearchScreen
+                NavigationView {
+                    Text("Suchen Seite")
+                }.tabItem{Image(systemName: "magnifyingglass").imageScale(.large)}
+                
+                // MARK: - PostCreationScreen
+                NavigationView {
+                    PostCreationScreen()
                         .navigationBarItems(leading:
                             HStack {
                                 Text("Neuer Beitrag").bold()
                             }
-                        )
-                            
-                    }.tabItem{Image(systemName: "plus.square").imageScale(.large)}
+                    )
                     
-                    // MARK: - ActivityScreen
-                    NavigationView {
-                        Text("Likes-Liste")
-                    }.tabItem{Image(systemName: "heart").imageScale(.large)}
-                    
-                    // MARK: - ProfileScreen
-                    NavigationView {
-                        Text("Profil-Seite")
-                    }.tabItem{Image(systemName: "person.circle").imageScale(.large)}
-                        
-                    }
+                }.tabItem{Image(systemName: "plus.square").imageScale(.large)}
+                
+                // MARK: - ActivityScreen
+                NavigationView {
+                    Text("Likes-Liste")
+                }.tabItem{Image(systemName: "heart").imageScale(.large)}
+                
+                // MARK: - ProfileScreen
+                NavigationView {
+                    Text("Profil-Seite")
+                }.tabItem{Image(systemName: "person.circle").imageScale(.large)}
+                
+            }
             
         }
         

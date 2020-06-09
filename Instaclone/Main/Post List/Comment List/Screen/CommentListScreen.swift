@@ -8,6 +8,7 @@
 
 import SwiftUI
 import KeyboardObserving
+import SwiftUIRefresh
 
 
 // MARK: TODO - Kommentare schreiben
@@ -18,6 +19,7 @@ import KeyboardObserving
 struct CommentListScreen: View {
     
     @State var commentInput = ""
+    @State var refreshIsShowing: Bool = false
     
     private var commentTyped: Bool {
         if commentInput.count > 0 {
@@ -40,13 +42,20 @@ struct CommentListScreen: View {
                 CommentScreen()
                 CommentScreen()
                 CommentScreen()
+            }.pullToRefresh(isShowing: $refreshIsShowing) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    // MARK: TODO: Firebase-Daten neu laden!
+                    print("Lade Daten aus Firebase Datenbank")
+                    self.refreshIsShowing = false
+                }
             }
+            
           Spacer()
             
             HStack {
                 UserProfileImage(image: Image("default_profile_m"))
                 TextField("Als User kommentieren...", text: self.$commentInput).lineLimit(nil)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 Button(action: {print("Posten getappt")}) {
                     Text("Posten")
                 }.disabled(!commentTyped)

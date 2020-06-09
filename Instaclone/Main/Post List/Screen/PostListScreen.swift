@@ -21,8 +21,8 @@ struct PostListScreen: View {
     var body: some View {
         
         List() {
-                    PostScreen()
-                    PostScreen()
+            PostScreen()
+            PostScreen()
         }.padding(.horizontal, -20)
         
             

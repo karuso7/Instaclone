@@ -9,7 +9,8 @@
 import SwiftUI
 import Combine
 
-// Ermöglicht Navigation zwischen Screens, ohne eine NavigationView  nutzen zu müssen
+// Ermöglicht Navigation zwischen Screens, ohne eine NavigationView nutzen zu müssen
+// Wird ermöglicht mittels Observable Objects und Animationen
 class ScreenRouter: ObservableObject {
     
     let objectWillChange = PassthroughSubject<ScreenRouter, Never>()
