@@ -28,6 +28,8 @@
 		3DCFEE5D2485A36600F25BF3 /* CommentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFEE5C2485A36600F25BF3 /* CommentScreen.swift */; };
 		D44113D5248AA1640009FE06 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44113D4248AA1640009FE06 /* TestView.swift */; };
 		D44113D7248AA26D0009FE06 /* SearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44113D6248AA26D0009FE06 /* SearchResultView.swift */; };
+		D4B5727D248F936800840076 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B5727C248F936800840076 /* ProfileHeaderView.swift */; };
+		D4B5727F248FA0BF00840076 /* abonnieren.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4B5727E248FA0BF00840076 /* abonnieren.jpg */; };
 		D4D04F7F2486957F00ECE6AA /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D04F7E2486957F00ECE6AA /* ProfileScreen.swift */; };
 		D4D04F81248695F800ECE6AA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D04F80248695F800ECE6AA /* ProfileView.swift */; };
 		D4D04FA42486B08600ECE6AA /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = D4D04FA32486B08600ECE6AA /* ASCollectionView */; };
@@ -93,6 +95,8 @@
 		3DCFEE5C2485A36600F25BF3 /* CommentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentScreen.swift; sourceTree = "<group>"; };
 		D44113D4248AA1640009FE06 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		D44113D6248AA26D0009FE06 /* SearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultView.swift; sourceTree = "<group>"; };
+		D4B5727C248F936800840076 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		D4B5727E248FA0BF00840076 /* abonnieren.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = abonnieren.jpg; path = ../../../../Downloads/abonnieren.jpg; sourceTree = "<group>"; };
 		D4D04F7E2486957F00ECE6AA /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		D4D04F80248695F800ECE6AA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D4D04FA52486B3B200ECE6AA /* PictureCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionView.swift; sourceTree = "<group>"; };
@@ -414,6 +418,7 @@
 			children = (
 				D4D04F80248695F800ECE6AA /* ProfileView.swift */,
 				D4D04FA52486B3B200ECE6AA /* PictureCollectionView.swift */,
+				D4B5727C248F936800840076 /* ProfileHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -544,6 +549,7 @@
 		D4EFDE2724868E470068C946 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D4B5727E248FA0BF00840076 /* abonnieren.jpg */,
 				D4EFDE2824868E470068C946 /* turtlerock.jpg */,
 				D4EFDE2924868E470068C946 /* silversalmoncreek.jpg */,
 				D4EFDE2A24868E470068C946 /* icybay.jpg */,
@@ -644,6 +650,7 @@
 				3D89898C2481575000163E2B /* Preview Assets.xcassets in Resources */,
 				D4EFDE3724868E470068C946 /* icybay.jpg in Resources */,
 				D4EFDE3C24868E470068C946 /* chincoteague.jpg in Resources */,
+				D4B5727F248FA0BF00840076 /* abonnieren.jpg in Resources */,
 				D4EFDE3A24868E470068C946 /* twinlake.jpg in Resources */,
 				D4EFDE3924868E470068C946 /* hiddenlake.jpg in Resources */,
 				D4EFDE3D24868E470068C946 /* yukon_charleyrivers.jpg in Resources */,
@@ -670,6 +677,7 @@
 				D4D04F7F2486957F00ECE6AA /* ProfileScreen.swift in Sources */,
 				3D8989B82481609E00163E2B /* LoginScreen.swift in Sources */,
 				D4EFDE4624868E650068C946 /* CircleImage.swift in Sources */,
+				D4B5727D248F936800840076 /* ProfileHeaderView.swift in Sources */,
 				3DCFEE512485255B00F25BF3 /* UserProfileImage.swift in Sources */,
 				D4D04FA62486B3B200ECE6AA /* PictureCollectionView.swift in Sources */,
 				3D8989BE248162A900163E2B /* ScreenRouter.swift in Sources */,

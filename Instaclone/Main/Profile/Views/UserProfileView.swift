@@ -14,41 +14,7 @@ struct UserProfileView: View {
     
     var body: some View {
         VStack {
-            HStack{
-                CircleImage(image: profile.pb)
-                    .offset(x: 0, y: 0)
-                    .padding(.top, 0)
-                VStack {
-                    Text(String(profile.contributions))
-                    Text("Beiträge").bold()
-                    .font(.subheadline)
-                }
-                VStack {
-                    Text(String(profile.subscriber))
-                    Text("Abonnenten").bold()
-                    .font(.subheadline)
-                }
-                VStack {
-                    Text(String(profile.subscribed))
-                    Text("Abonniert").bold()
-                    .font(.subheadline)
-                }
-                   
-            }.padding()
-        
-            VStack {
-                
-                HStack {
-                    Text(profile.name).bold()
-                    Spacer()
-                }.padding(.top, 0)
-                
-                HStack {
-                    Text(profile.status)
-                    Spacer()
-                }.padding(.top, 0)
-                
-            }.padding()
+            ProfileHeaderView(profile: profile)
             
             HStack {
                 Button(action: {
@@ -56,19 +22,32 @@ struct UserProfileView: View {
                     self.followButtonTapped.toggle()
                 }) {
                     if followButtonTapped {
-                        Image(systemName: "minus.circle.fill").foregroundColor(.gray).imageScale(.large)
+                        VStack {
+                            Text("Nicht mehr folgen")
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .frame(height: 35)
+                            .foregroundColor(Color.white)
+                            .background(Color.gray)
+                            .cornerRadius(5)
+                        }
                     } else {
-                        Image(systemName: "plus.circle.fill").foregroundColor(.blue).imageScale(.large)
+                        VStack {
+                            Text("Abonnieren")
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .frame(height: 35)
+                            .foregroundColor(Color.white)
+                            .background(Color.blue)
+                            .cornerRadius(5)
+                        }
                     }
                 } .buttonStyle(PlainButtonStyle())
-                    .padding(.trailing)
-            }
+            }.padding(.horizontal).padding(.top)
             
             VStack {
                 HStack {
                     PictureCollectionView(profile: profile, dataExample: (0 ..< profile.images.count).map { $0 })
                 }
-            }.padding(.top, 0)
+            }.padding(.top)
             
             Spacer()
             
@@ -78,6 +57,6 @@ struct UserProfileView: View {
 
 struct UserProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        UserProfileView(profile: profileData[0])
+        UserProfileView(profile: profileData[1])
     }
 }

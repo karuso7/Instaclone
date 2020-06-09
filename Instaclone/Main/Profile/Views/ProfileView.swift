@@ -13,48 +13,14 @@ struct ProfileView: View {
     
     var body: some View {
         VStack {
-            HStack{
-                CircleImage(image: profile.pb)
-                    .offset(x: 0, y: 0)
-                    .padding(.top, 0)
-                VStack {
-                    Text(String(profile.contributions))
-                    Text("Beiträge").bold()
-                    .font(.subheadline)
-                }
-                VStack {
-                    Text(String(profile.subscriber))
-                    Text("Abonnenten").bold()
-                    .font(.subheadline)
-                }
-                VStack {
-                    Text(String(profile.subscribed))
-                    Text("Abonniert").bold()
-                    .font(.subheadline)
-                }
-                   
-            }.padding()
-        
-            VStack {
-                
-                HStack {
-                    Text(profile.name).bold()
-                    Spacer()
-                }.padding(.top, 0)
-                
-                HStack {
-                    Text(profile.status)
-                    Spacer()
-                }.padding(.top, 0)
-                
-            }.padding()
+            ProfileHeaderView(profile: profile)
             
             VStack {
                 HStack {
                     //dataExample ist in dem Fall nur ein Array mit Integern (Anzahl der Fotos des jeweiligen Profils). Eine sauberere Lösung widrd noch gesucht.
                     PictureCollectionView(profile: profile, dataExample: (0 ..< profile.images.count).map { $0 })
                 }
-            }.padding(.top, 0)
+            }.padding(.top)
             
             Spacer()
             
