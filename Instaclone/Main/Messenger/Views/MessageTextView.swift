@@ -36,21 +36,15 @@ struct MessageTextView: View {
                                 
                                 
                         )
-                            
-                        
-                    
+
                     
                 }.frame(minWidth: 0, maxWidth: self.message.isReceived ? 300 : 250, minHeight: 0, maxHeight: .infinity, alignment: self.message.isReceived ? .topLeading : .topTrailing)
-                
-                
-                
                 
             }
             
             
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: self.message.isReceived ? .topLeading : .topTrailing)
-        
-        
+
     }
 
 }
