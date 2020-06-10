@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import KeyboardObserving
 
 struct LoginScreen: View {
     @EnvironmentObject var screenRouter: ScreenRouter
@@ -76,7 +77,7 @@ struct LoginScreen: View {
                     
                     
                 }.padding(.horizontal)
-            }.keyBoardAdaptive()
+            }.keyboardObserving()
             
             
             Spacer()

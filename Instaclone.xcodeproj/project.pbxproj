@@ -17,8 +17,9 @@
 		3D8989BA248160AF00163E2B /* RegistrationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989B9248160AF00163E2B /* RegistrationScreen.swift */; };
 		3D8989BC248160D300163E2B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989BB248160D300163E2B /* HomeScreen.swift */; };
 		3D8989BE248162A900163E2B /* ScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989BD248162A900163E2B /* ScreenRouter.swift */; };
-		3D8989C124816AB300163E2B /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989C024816AB300163E2B /* KeyboardAdaptive.swift */; };
 		3D8989C424816F1B00163E2B /* BackgroundGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989C324816F1B00163E2B /* BackgroundGestureRecognizer.swift */; };
+		3DC15AA82487B94C001E010E /* KeyboardObserving in Frameworks */ = {isa = PBXBuildFile; productRef = 3DC15AA72487B94C001E010E /* KeyboardObserving */; };
+		3DC15AAB2487B9C2001E010E /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 3DC15AAA2487B9C2001E010E /* SwiftUIX */; };
 		3DCFEE4A24850CFC00F25BF3 /* PostListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFEE4924850CFC00F25BF3 /* PostListScreen.swift */; };
 		3DCFEE4F24850FC500F25BF3 /* PostScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFEE4E24850FC500F25BF3 /* PostScreen.swift */; };
 		3DCFEE512485255B00F25BF3 /* UserProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFEE502485255B00F25BF3 /* UserProfileImage.swift */; };
@@ -84,7 +85,6 @@
 		3D8989B9248160AF00163E2B /* RegistrationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreen.swift; sourceTree = "<group>"; };
 		3D8989BB248160D300163E2B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		3D8989BD248162A900163E2B /* ScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRouter.swift; sourceTree = "<group>"; };
-		3D8989C024816AB300163E2B /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
 		3D8989C324816F1B00163E2B /* BackgroundGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGestureRecognizer.swift; sourceTree = "<group>"; };
 		3DCFEE4924850CFC00F25BF3 /* PostListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListScreen.swift; sourceTree = "<group>"; };
 		3DCFEE4E24850FC500F25BF3 /* PostScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostScreen.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4D04FA42486B08600ECE6AA /* ASCollectionView in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +456,6 @@
 		3D8989C224816EB100163E2B /* Keyboard_Additions */ = {
 			isa = PBXGroup;
 			children = (
-				3D8989C024816AB300163E2B /* KeyboardAdaptive.swift */,
 				3D8989C324816F1B00163E2B /* BackgroundGestureRecognizer.swift */,
 			);
 			path = Keyboard_Additions;
@@ -594,7 +593,7 @@
 			);
 			name = Instaclone;
 			packageProductDependencies = (
-				D4D04FA32486B08600ECE6AA /* ASCollectionView */,
+
 			);
 			productName = Instaclone;
 			productReference = 3D89897F2481574E00163E2B /* Instaclone.app */;
@@ -625,7 +624,7 @@
 			);
 			mainGroup = 3D8989762481574E00163E2B;
 			packageReferences = (
-				D4D04FA22486B08600ECE6AA /* XCRemoteSwiftPackageReference "ASCollectionView" */,
+
 			);
 			productRefGroup = 3D8989802481574E00163E2B /* Products */;
 			projectDirPath = "";
@@ -668,8 +667,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D8989C124816AB300163E2B /* KeyboardAdaptive.swift in Sources */,
-				D4EFDE4B24868E7C0068C946 /* Profile.swift in Sources */,
+
 				3DCFEE5D2485A36600F25BF3 /* CommentScreen.swift in Sources */,
 				D44113D5248AA1640009FE06 /* TestView.swift in Sources */,
 				3DCFEE4A24850CFC00F25BF3 /* PostListScreen.swift in Sources */,
@@ -843,10 +841,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = de.KKrause.Instaclone;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.KKrause.Instaclone-THM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -863,10 +861,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = de.KKrause.Instaclone;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.KKrause.Instaclone-THM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -894,9 +892,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D4D04FA22486B08600ECE6AA /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
+
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -905,10 +901,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D4D04FA32486B08600ECE6AA /* ASCollectionView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D4D04FA22486B08600ECE6AA /* XCRemoteSwiftPackageReference "ASCollectionView" */;
-			productName = ASCollectionView;
+
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

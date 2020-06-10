@@ -9,10 +9,13 @@
 import SwiftUI
 
 struct CommentScreen: View {
+    
     @State var likeButtonTapped = false
+    let username = "UserXY"
     var likes = 26
     
     var commentText: String = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor                               invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    
     var body: some View {
         VStack(alignment: .leading){
             HStack {
@@ -21,7 +24,11 @@ struct CommentScreen: View {
                     SingleNavigationLink(destination: UserProfileScreen(profile: profileData[1])) {
                         HStack(alignment: .top) {
                             UserProfileImage(image: Image("default_profile_m"))
-                            Text("\(self.commentText)")
+                            VStack(alignment: .leading) {
+                                Text("\(self.username)").bold()
+                                Text("\(self.commentText)")
+                            }
+                            
                         }
                         
                     }
