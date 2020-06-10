@@ -7,8 +7,12 @@
 //
 
 import SwiftUI
+import SwiftUIRefresh
 
 struct HomeScreen: View {
+    
+    @EnvironmentObject var screenRouter: ScreenRouter
+    @State var refreshIsShowing = false
     
     // MARK: - Custom Initializer
     // MARK: Navigation Bars lassen sich allein durch SwiftUI nicht stylen.
@@ -20,70 +24,29 @@ struct HomeScreen: View {
     
     var body: some View {
         VStack {
-                TabView {
-                    NavigationView {
-                        PostListScreen()
-                            
+
                         
                         .navigationBarItems(
                             leading:
                             HStack {
-                                Button("") {
-                                    print("Kameraview muss sich hier öffnen")
+                                Button(action: {
+                                    self.screenRouter.currentScreen = "loginScreen"
                                     
-                                }
-                                Image(systemName: "camera").imageScale(.large)
+                                }) {
+                                    Image(systemName: "arrow.uturn.left.circle").imageScale(.large).foregroundColor(.primary).frame(width: 40, height: 35, alignment: .leading)
+                                }            
                             },
                             
                             trailing:
                             HStack {
-                                Button("") {
-                                    print("ChatView muss sich hier öffnen")
+                                Button(action: {
+                                    print("Messenger öffnen")
+                                    self.screenRouter.currentScreen = "messengerScreen"
+                                }) {
+                                    Image(systemName: "paperplane").imageScale(.large).foregroundColor(.primary).frame(width: 40, height: 30, alignment: .trailing)
                                 }
-                                Image(systemName: "paperplane").imageScale(.large)
                             }
-                            )
-                            .navigationBarTitle(
-                                Text("Instaclone"), displayMode: .inline)
-                        
-                    }
-                        .navigationViewStyle(StackNavigationViewStyle())
-                    .tabItem {Image(systemName: "house").imageScale(.large)}
-                    
-                    NavigationView {
-                        SearchScreen()
-                        .navigationBarTitle(
-                        Text("Suche"), displayMode: .inline)
-                        //NavigationBar soll für diese View ausgeschaltet werden und der abstand nach oben muss dann minimiert werden
-                    }.tabItem{Image(systemName: "magnifyingglass").imageScale(.large)}
-                    
-                    NavigationView {
-                        Text("Fotos hinzufügen")
-                    }.tabItem{Image(systemName: "plus.square").imageScale(.large)}
-                    
-                    NavigationView {
-                        ActivityScreen()
-                        .navigationBarTitle(
-                        Text("Aktivität"), displayMode: .inline)
-                    }.tabItem{Image(systemName: "heart").imageScale(.large)}
-                    
-                    NavigationView {
-                        ProfileScreen(profile: profileData[0])
-                        .navigationBarItems(
-                            trailing:
-                            HStack {
-                                Button("") {
-                                        print("settings soll sich hier öffnen")
-                                    }
-                                    Image(systemName: "ellipsis").imageScale(.large)
-                            }
-                        )
-                        .navigationBarTitle(
-                            Text(profileData[0].id), displayMode: .inline)
-                        
-                    }.tabItem{Image(systemName: "person.circle").imageScale(.large)}
-                        
-                }
+
             
         }
         
@@ -92,6 +55,6 @@ struct HomeScreen: View {
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen()
+        HomeScreen().environmentObject(ScreenRouter())
     }
 }

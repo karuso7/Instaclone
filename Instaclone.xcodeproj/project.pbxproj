@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D227804248B72D700CAD697 /* PostCreationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D227803248B72D700CAD697 /* PostCreationScreen.swift */; };
+		3D227807248B8DB400CAD697 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D227806248B8DB400CAD697 /* ImagePicker.swift */; };
+		3D227809248B922000CAD697 /* ImagePickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D227808248B922000CAD697 /* ImagePickerCoordinator.swift */; };
+		3D57AA82248E36FA00B39FC4 /* AddImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D57AA81248E36FA00B39FC4 /* AddImageView.swift */; };
+		3D57AA8F248F837400B39FC4 /* SwiftUIRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 3D57AA8E248F837400B39FC4 /* SwiftUIRefresh */; };
+		3D57AA91248F8AB400B39FC4 /* ConversationListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D57AA90248F8AB400B39FC4 /* ConversationListScreen.swift */; };
+		3D57AA93248F8B5600B39FC4 /* ConversationEntryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D57AA92248F8B5600B39FC4 /* ConversationEntryScreen.swift */; };
+		3D57AA95248F94E900B39FC4 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D57AA94248F94E900B39FC4 /* ChatScreen.swift */; };
+		3D57AA97248F9C6B00B39FC4 /* MessageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D57AA96248F9C6B00B39FC4 /* MessageTextView.swift */; };
+		3D57AA9F2490BCA700B39FC4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D57AA9E2490BCA700B39FC4 /* Message.swift */; };
 		3D8989832481574E00163E2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989822481574E00163E2B /* AppDelegate.swift */; };
 		3D8989852481574E00163E2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989842481574E00163E2B /* SceneDelegate.swift */; };
 		3D8989872481574E00163E2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8989862481574E00163E2B /* ContentView.swift */; };
@@ -73,6 +83,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D227803248B72D700CAD697 /* PostCreationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCreationScreen.swift; sourceTree = "<group>"; };
+		3D227806248B8DB400CAD697 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		3D227808248B922000CAD697 /* ImagePickerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerCoordinator.swift; sourceTree = "<group>"; };
+		3D57AA81248E36FA00B39FC4 /* AddImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageView.swift; sourceTree = "<group>"; };
+		3D57AA90248F8AB400B39FC4 /* ConversationListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListScreen.swift; sourceTree = "<group>"; };
+		3D57AA92248F8B5600B39FC4 /* ConversationEntryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationEntryScreen.swift; sourceTree = "<group>"; };
+		3D57AA94248F94E900B39FC4 /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		3D57AA96248F9C6B00B39FC4 /* MessageTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTextView.swift; sourceTree = "<group>"; };
+		3D57AA9E2490BCA700B39FC4 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3D89897F2481574E00163E2B /* Instaclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instaclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8989822481574E00163E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D8989842481574E00163E2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +155,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D227805248B8DA400CAD697 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D227808248B922000CAD697 /* ImagePickerCoordinator.swift */,
+				3D227806248B8DB400CAD697 /* ImagePicker.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D57AA9C2490BC8400B39FC4 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		3D57AA9D2490BC8C00B39FC4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D57AA9E2490BCA700B39FC4 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3D8989762481574E00163E2B = {
 			isa = PBXGroup;
 			children = (
@@ -201,7 +244,7 @@
 				3D89899A2481581600163E2B /* Home */,
 				3D89899B2481584D00163E2B /* Search */,
 				3D8989A02481590A00163E2B /* UserProfile */,
-				3D89899D2481588900163E2B /* PhotoSelection */,
+				3D89899D2481588900163E2B /* Post Creation */,
 				3D89899E2481589400163E2B /* Activity */,
 				3D89899F248158E800163E2B /* Profile */,
 			);
@@ -244,13 +287,14 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		3D89899D2481588900163E2B /* PhotoSelection */ = {
+		3D89899D2481588900163E2B /* Post Creation */ = {
 			isa = PBXGroup;
 			children = (
+				3D227805248B8DA400CAD697 /* Models */,
 				3D8989AE24815B8900163E2B /* Views */,
 				3D8989AD24815B8200163E2B /* Screens */,
 			);
-			path = PhotoSelection;
+			path = "Post Creation";
 			sourceTree = "<group>";
 		};
 		3D89899E2481589400163E2B /* Activity */ = {
@@ -283,6 +327,8 @@
 		3D8989A12481597200163E2B /* Messenger */ = {
 			isa = PBXGroup;
 			children = (
+				3D57AA9D2490BC8C00B39FC4 /* Models */,
+				3D57AA9C2490BC8400B39FC4 /* New Group */,
 				3D8989A624815B3900163E2B /* Views */,
 				3D8989A524815AB700163E2B /* Screens */,
 			);
@@ -315,6 +361,9 @@
 		3D8989A524815AB700163E2B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				3D57AA94248F94E900B39FC4 /* ChatScreen.swift */,
+				3D57AA92248F8B5600B39FC4 /* ConversationEntryScreen.swift */,
+				3D57AA90248F8AB400B39FC4 /* ConversationListScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -322,6 +371,7 @@
 		3D8989A624815B3900163E2B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3D57AA96248F9C6B00B39FC4 /* MessageTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -377,6 +427,7 @@
 		3D8989AD24815B8200163E2B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				3D227803248B72D700CAD697 /* PostCreationScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -384,6 +435,7 @@
 		3D8989AE24815B8900163E2B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3D57AA81248E36FA00B39FC4 /* AddImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -671,21 +723,16 @@
 				3DCFEE5D2485A36600F25BF3 /* CommentScreen.swift in Sources */,
 				D44113D5248AA1640009FE06 /* TestView.swift in Sources */,
 				3DCFEE4A24850CFC00F25BF3 /* PostListScreen.swift in Sources */,
+				3D227809248B922000CAD697 /* ImagePickerCoordinator.swift in Sources */,
 				3D8989832481574E00163E2B /* AppDelegate.swift in Sources */,
-				D4D04F7F2486957F00ECE6AA /* ProfileScreen.swift in Sources */,
+
 				3D8989B82481609E00163E2B /* LoginScreen.swift in Sources */,
 				D4EFDE4624868E650068C946 /* CircleImage.swift in Sources */,
 				D4B5727D248F936800840076 /* ProfileHeaderView.swift in Sources */,
 				3DCFEE512485255B00F25BF3 /* UserProfileImage.swift in Sources */,
 				D4D04FA62486B3B200ECE6AA /* PictureCollectionView.swift in Sources */,
 				3D8989BE248162A900163E2B /* ScreenRouter.swift in Sources */,
-				D4E65862248A4DC10058E2E4 /* SearchScreen.swift in Sources */,
-				3D8989BC248160D300163E2B /* HomeScreen.swift in Sources */,
-				3D8989BA248160AF00163E2B /* RegistrationScreen.swift in Sources */,
-				D4E65868248A5D310058E2E4 /* ActivityView.swift in Sources */,
-				3DCFEE532485456600F25BF3 /* UserProfileScreen.swift in Sources */,
-				D4E65864248A4E290058E2E4 /* SearchView.swift in Sources */,
-				D4E65860248707700058E2E4 /* UserProfileView.swift in Sources */,
+
 				3DCFEE4F24850FC500F25BF3 /* PostScreen.swift in Sources */,
 				3D8989C424816F1B00163E2B /* BackgroundGestureRecognizer.swift in Sources */,
 				3D8989852481574E00163E2B /* SceneDelegate.swift in Sources */,
@@ -694,8 +741,7 @@
 				D4E6586A248A60D20058E2E4 /* OneActivityView.swift in Sources */,
 				D4EFDE4A24868E7C0068C946 /* Data.swift in Sources */,
 				3DCFEE562485529500F25BF3 /* SingleNavigationLink.swift in Sources */,
-				D4D04F81248695F800ECE6AA /* ProfileView.swift in Sources */,
-				D4E65866248A5D1E0058E2E4 /* ActivityScreen.swift in Sources */,
+
 				3DCFEE5B2485A13000F25BF3 /* CommentListScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

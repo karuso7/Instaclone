@@ -42,9 +42,9 @@ struct CommentScreen: View {
                     self.likeButtonTapped.toggle()
                 }) {
                     if likeButtonTapped {
-                        Image(systemName: "suit.heart.fill").foregroundColor(.red).imageScale(.small)
+                        Image(systemName: "suit.heart.fill").foregroundColor(.red).imageScale(.small).frame(width: 20, height: 20, alignment: .center)
                     } else {
-                        Image(systemName: "heart").foregroundColor(.primary).imageScale(.small)
+                        Image(systemName: "heart").foregroundColor(.primary).imageScale(.small).frame(width: 20, height: 20, alignment: .center)
                     }
                     
                 }
