@@ -24,13 +24,7 @@ struct HomeScreen: View {
     
     var body: some View {
         VStack {
-            
-            TabView {
-                
-                // MARK: - NavigationBar & Homefeed
-                NavigationView {
-                    PostListScreen()
-                        
+
                         
                         .navigationBarItems(
                             leading:
@@ -52,49 +46,7 @@ struct HomeScreen: View {
                                     Image(systemName: "paperplane").imageScale(.large).foregroundColor(.primary).frame(width: 40, height: 30, alignment: .trailing)
                                 }
                             }
-                    )
-                        .navigationBarTitle(
-                            Text("Instaclone"), displayMode: .inline)
-                    
-                }
-                .navigationViewStyle(StackNavigationViewStyle())
-                .tabItem {Image(systemName: "house").imageScale(.large)}
-                .pullToRefresh(isShowing: $refreshIsShowing) {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        // MARK: TODO: Firebase-Daten neu laden!
-                        print("Lade Daten aus Firebase Datenbank")
-                        self.refreshIsShowing = false
-                    }
-                }
-                
-                
-                // MARK: - SearchScreen
-                NavigationView {
-                    Text("Suchen Seite")
-                }.tabItem{Image(systemName: "magnifyingglass").imageScale(.large)}
-                
-                // MARK: - PostCreationScreen
-                NavigationView {
-                    PostCreationScreen()
-                        .navigationBarItems(leading:
-                            HStack {
-                                Text("Neuer Beitrag").bold()
-                            }
-                    )
-                    
-                }.tabItem{Image(systemName: "plus.square").imageScale(.large)}
-                
-                // MARK: - ActivityScreen
-                NavigationView {
-                    Text("Likes-Liste")
-                }.tabItem{Image(systemName: "heart").imageScale(.large)}
-                
-                // MARK: - ProfileScreen
-                NavigationView {
-                    Text("Profil-Seite")
-                }.tabItem{Image(systemName: "person.circle").imageScale(.large)}
-                
-            }
+
             
         }
         

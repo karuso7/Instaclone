@@ -1,0 +1,20 @@
+[
+    {
+        "name": "LL",
+        "status": "We love all animals 🐶 and donate a percentage of sales to marine life 🐠",
+        "id": "animaaal",
+        "subscriber": 354,
+        "subscribed": 263,
+        "imageName": "umbagog",
+        "imageNames": ["turtlerock", "silversalmoncreek", "lakemcdonald", "icybay"]
+    },
+    {
+        "name": "Peace | Freedom | Love",
+        "status": "❤️ Lover not a fighter spreading ✌️all over the 🌎",
+        "id": "peacemake",
+        "subscriber": 143,
+        "subscribed": 165,
+        "imageName": "hiddenlake",
+        "imageNames": ["chilkoottrail", "stmarylake", "twinlake", "yukon_charleyrivers", "rainbowlake"]
+    }
+]
