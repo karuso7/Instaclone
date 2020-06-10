@@ -42,7 +42,7 @@ struct ConversationListScreen: View {
                             Button(action: {
                                 self.screenRouter.currentScreen = "homeScreen"
                             }) {
-                                Image(systemName: "house.fill").imageScale(.large).foregroundColor(.primary)
+                                Image(systemName: "house.fill").imageScale(.large).foregroundColor(.primary).frame(width: 40, height: 35, alignment: .leading)
                             }
                         }
                     ).navigationBarTitle(

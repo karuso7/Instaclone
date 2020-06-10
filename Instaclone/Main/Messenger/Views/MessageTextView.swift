@@ -9,27 +9,26 @@
 import SwiftUI
 
 struct MessageTextView: View {
-    let isReceived: Bool
-    @State var message: String = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    let message: Message
     
     
     var body: some View {
         
         
-        VStack(alignment: self.isReceived ? .leading : .trailing ) {
+        VStack(alignment: self.message.isReceived ? .leading : .trailing ) {
             
             VStack(alignment: .leading) {
                 
                 
                     
                 HStack(alignment: .bottom) {
-                    if isReceived {
+                    if self.message.isReceived {
                         UserProfileImage(image: Image("default_profile_m"))
                     }
-                    Text("\(message)")
+                    Text("\(self.message.messageText)")
                             
                             .padding()
-                            .background(self.isReceived ? nil : Color.gray )
+                        .background(self.message.isReceived ? nil : Color.gray )
                             .cornerRadius(16)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 16)
@@ -41,7 +40,7 @@ struct MessageTextView: View {
                         
                     
                     
-                }.frame(minWidth: 0, maxWidth: self.isReceived ? 300 : 250, minHeight: 0, maxHeight: .infinity, alignment: self.isReceived ? .bottomLeading : .bottomTrailing)
+                }.frame(minWidth: 0, maxWidth: self.message.isReceived ? 300 : 250, minHeight: 0, maxHeight: .infinity, alignment: self.message.isReceived ? .topLeading : .topTrailing)
                 
                 
                 
@@ -49,13 +48,16 @@ struct MessageTextView: View {
             }
             
             
-        }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: self.isReceived ? .bottomLeading : .bottomTrailing)
+        }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: self.message.isReceived ? .topLeading : .topTrailing)
+        
+        
     }
+
 }
 
 struct MessageTextView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageTextView(isReceived: true)
+        MessageTextView(message: Message(messageText: "Test123", isReceived: true))
         
     }
 }

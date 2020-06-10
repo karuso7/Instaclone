@@ -39,7 +39,7 @@ struct HomeScreen: View {
                                     self.screenRouter.currentScreen = "loginScreen"
                                     
                                 }) {
-                                    Image(systemName: "arrow.uturn.left.circle").imageScale(.large).foregroundColor(.primary).frame(width: 25, height: 25, alignment: .center)
+                                    Image(systemName: "arrow.uturn.left.circle").imageScale(.large).foregroundColor(.primary).frame(width: 40, height: 35, alignment: .leading)
                                 }            
                             },
                             
@@ -49,7 +49,7 @@ struct HomeScreen: View {
                                     print("Messenger öffnen")
                                     self.screenRouter.currentScreen = "messengerScreen"
                                 }) {
-                                    Image(systemName: "paperplane").imageScale(.large).foregroundColor(.primary).frame(width: 25, height: 25, alignment: .center)
+                                    Image(systemName: "paperplane").imageScale(.large).foregroundColor(.primary).frame(width: 40, height: 30, alignment: .trailing)
                                 }
                             }
                     )

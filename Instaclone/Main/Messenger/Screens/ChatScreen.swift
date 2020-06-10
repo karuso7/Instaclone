@@ -11,6 +11,13 @@ import KeyboardObserving
 
 struct ChatScreen: View {
     
+    @State var testMessages: [Message] = [Message(messageText: "Test123", isReceived: false),
+                                   Message(messageText: "Nochmal Test123", isReceived: true),
+                                   Message(messageText: "Selber Test123", isReceived: false),
+                                   Message(messageText: "Nochmal Test123", isReceived: true),
+                                   Message(messageText: "Nochmal Test123", isReceived: true)
+                                   ]
+    
     @State private var messageInput: String = ""
     
     private var messageTyped: Bool {
@@ -30,20 +37,25 @@ struct ChatScreen: View {
         
         VStack {
             
-            List {
+            VStack {
+                List {
+                    ForEach(self.testMessages) { message in
+                            MessageTextView(message: message)
+                    }
+
+                }
                 
-                MessageTextView(isReceived: true)
-                MessageTextView(isReceived: false)
-                MessageTextView(isReceived: true)
+            }
                 
-            }.padding(.top, 16)
-            
+     
             HStack {
-                
                 TextField("Nachricht schreiben...", text: self.$messageInput).lineLimit(nil)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                Button(action: {print("Posten getappt")}) {
-                    Text("Senden")
+                Button(action: {
+                    self.testMessages.append(Message(messageText: self.messageInput, isReceived: false))
+                    self.messageInput = ""
+                }) {
+                    Text("Senden").frame(width: 60, height: 38, alignment: .center)
                 }.disabled(!messageTyped)
             }
             .padding(.leading, 16)
@@ -65,3 +77,8 @@ struct ChatScreen_Previews: PreviewProvider {
         ChatScreen()
     }
 }
+
+
+
+
+

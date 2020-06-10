@@ -23,6 +23,8 @@ struct PostListScreen: View {
         List() {
             PostScreen()
             PostScreen()
+            PostScreen()
+            PostScreen()
         }.padding(.horizontal, -20)
         
             
