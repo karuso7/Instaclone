@@ -25,7 +25,7 @@ struct PostScreen: View {
             
             VStack {
                 
-                SingleNavigationLink(destination: UserProfileScreen() ) {
+                SingleNavigationLink(destination: UserProfileScreen(profile: profileData[1]) ) {
                     HStack {
                         UserProfileImage(image: Image("default_profile_m"))
                         Text("\(self.username)").bold()
@@ -74,7 +74,7 @@ struct PostScreen: View {
             
             VStack(alignment: .leading) {
                 
-                SingleNavigationLink(destination: UserProfileScreen() ) {
+                SingleNavigationLink(destination: UserProfileScreen(profile: profileData[1]) ) {
                     Text("\(self.username)").bold()
                 }
                 
